@@ -1,0 +1,3 @@
+VahidStore Superuser Info:
+username: amj132
+pass: amjamjamj
