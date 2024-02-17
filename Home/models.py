@@ -17,4 +17,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+    
+class BackgrounFigure(models.Model):
+    title_1 = models.CharField(max_length=60)
+    title_2 = models.CharField(max_length=60)
+    image = models.ImageField(upload_to='background/')
+
+    def __str__(self):
+        return self.title_1
 
