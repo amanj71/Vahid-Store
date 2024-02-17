@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h4 class="text-center"> Home Sweety home </h4>
+<h6 class="text-center"> Vahid is here </h6>
+<h6 class="text-center"> Money is Coming to Vahid </h6>
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem; height: 25rem;">
+            <div class="aspect-ratio-box">
+                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <p class="card-text">Price: ${{ product.price }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
