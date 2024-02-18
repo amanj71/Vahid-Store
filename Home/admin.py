@@ -10,6 +10,6 @@ class CategoryAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['title', 'price']
 
-#@admin.register(models.BackgrounFigure)
-#class ProductAdmin(admin.ModelAdmin):
-#    list_display = ['title']
+@admin.register(models.BackgrounFigure)
+class BackgrounFigureAdmin(admin.ModelAdmin):
+    list_display = ['title_1',]

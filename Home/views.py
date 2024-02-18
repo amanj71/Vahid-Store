@@ -5,8 +5,9 @@ from .models import Product, Category, BackgrounFigure
 
 def home_page(request):
     queryset = Product.objects.all()
+    backgrond = BackgrounFigure.objects.all()
     context = {
-        "products": queryset,
+        "products": queryset, "background": backgrond,
     }
     return render(request, 'home/home.html', context)
 
