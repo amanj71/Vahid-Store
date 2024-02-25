@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Product, Category, BackgrounFigure
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -12,9 +13,9 @@ def home_page(request):
     return render(request, 'home/home.html', context)
 
 def contact_page(request):
-    
+    contact_form = ContactForm(request.POST or None)
     context = {
-
+        "contact_form": contact_form,
     }
     return render(request, 'home/contact.html', context)
 
