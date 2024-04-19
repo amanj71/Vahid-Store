@@ -1,3 +1,7 @@
 VahidStore Superuser Info:
 username: amj132
 pass: amjamjamj
+
+testusercreation:
+username: testusercreat
+pass: TestTestTest

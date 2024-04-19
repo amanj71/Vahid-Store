@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h5> Product: </h5>
+    <p> {{ product.title }} </p>
+    <h5> Category: </h5>
+    <p> {{ product.category }} </p>
+    <h5> Price: </h5>
+    <p> {{ product.price }} </p>
+    <h5> Description: </h5>
+    <p> {{ product.description }} </p>
+    <img src="{{ product.image.url }}" style="height: 40rcap; ">
+</div>
+
+
+
+{% endblock content %}
